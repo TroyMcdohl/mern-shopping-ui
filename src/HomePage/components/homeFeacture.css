@@ -1,0 +1,149 @@
+.home_feacture_container {
+  height: calc(100vh - 60px);
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home_feacture_wrapper {
+  width: 90%;
+  height: 95%;
+}
+
+.home_feacture_card_wrapper {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+
+.home_feacture_card {
+  width: 30%;
+  height: 100%;
+  background-color: white;
+
+  margin: 5px;
+}
+
+.home_feacture_card_img_box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home_feacture_card_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home_feacture_card_img_caption {
+  position: absolute;
+  font-size: 30px;
+  color: black;
+  font-weight: 300px;
+}
+
+.home_feacture_card_img_btn {
+  position: absolute;
+  bottom: 30%;
+  border: none;
+  width: 40%;
+  height: 10%;
+  font-size: 20px;
+  background-color: white;
+  border-radius: 5px;
+  font-weight: 300px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.home_feacture_card_img_box:hover .home_feacture_card_img_caption {
+  animation: updown 2s ease;
+}
+
+@keyframes updown {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.home_feacture_card_img_box:hover .home_feacture_card_img_btn {
+  animation: downup 2s ease;
+}
+
+@keyframes downup {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.home_feacture_card_img_btn:hover {
+  background-color: blue;
+  color: white;
+}
+
+.home_feacture_bot_wrapper {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home_feacture_bot_items {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.home_feacture_bot_item {
+  width: 20%;
+  height: 100%;
+  margin: 5px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home_feacture_bot_item_img {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+@media (max-width: 760px) {
+  .home_feacture_container {
+    height: 100%;
+  }
+
+  .home_feacture_card_wrapper {
+    flex-direction: column;
+  }
+
+  .home_feacture_card {
+    width: 90%;
+    height: 35vh;
+  }
+
+  .home_feacture_bot_item {
+    width: 35%;
+  }
+}

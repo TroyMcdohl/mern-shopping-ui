@@ -1,0 +1,97 @@
+.error_box {
+  height: 8vh;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error_title {
+  color: white;
+  font-size: 20px;
+  background-color: rgb(182, 3, 3);
+  height: 100%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  animation: comingdown 0.3s ease alternate;
+}
+
+@keyframes comingdown {
+  from {
+    opacity: 0;
+    height: 0%;
+  }
+  to {
+    opacity: 1;
+    height: 100%;
+  }
+}
+
+.success_box {
+  height: 8vh;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.success_title {
+  color: white;
+  font-size: 20px;
+  background-color: rgb(10, 173, 10);
+  height: 100%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  animation: comingdown 0.5s ease;
+}
+
+@keyframes comingdown {
+  from {
+    opacity: 0;
+    height: 0%;
+  }
+  to {
+    opacity: 1;
+    height: 100%;
+  }
+}
+.loading_box {
+  height: 8vh;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading_title {
+  color: white;
+  font-size: 20px;
+  background-color: rgb(167, 167, 5);
+  height: 100%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  animation: comingdown 0.5s ease;
+}
+
+@keyframes comingdown {
+  from {
+    opacity: 0;
+    height: 0%;
+  }
+  to {
+    opacity: 1;
+    height: 100%;
+  }
+}

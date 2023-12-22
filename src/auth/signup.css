@@ -1,0 +1,8 @@
+.auth_signup_form {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}

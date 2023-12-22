@@ -1,0 +1,183 @@
+.nav_container {
+  background-color: #5585b5;
+  height: 60px;
+  width: 100%;
+  transition: all 1s ease;
+  top: 0;
+  position: sticky;
+  z-index: 99;
+}
+
+.nav_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.nav_left {
+  margin: 15px;
+  font-size: 20px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.nav_center {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_center_items {
+  display: flex;
+  list-style: none;
+}
+
+.nav_center_item {
+  margin: 20px;
+  color: white;
+  font-size: 18px;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.nav_center_item:hover {
+  transform: scale(1.2);
+  color: black;
+}
+
+.nav_right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.nav_right_profile_img {
+  width: 45px;
+  height: 45px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.nav_right_cart_icon {
+  margin: 10px;
+  color: white;
+  cursor: pointer;
+  position: relative;
+}
+
+.nav_right_cart_quantity {
+  position: absolute;
+  background-color: red;
+  padding: 5px;
+  border-radius: 50%;
+  color: white;
+  top: -10px;
+  right: -5px;
+  font-size: 10px;
+}
+
+.nav_right_profile_photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.nav_right_profile_photo_responsive {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: none;
+}
+
+.nav_right_humburgur_bar {
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_humburger {
+  width: 30px;
+  height: 20px;
+  margin: 10px;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_line {
+  background-color: white;
+  width: 100%;
+  height: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  transition: all 0.5s ease;
+  transform-origin: left;
+}
+
+.nav_container.active {
+  background-color: #1a2639;
+  transform: scale(1);
+}
+
+.nav_humburger.active > :first-child {
+  transform: rotate(38deg);
+}
+
+.nav_humburger.active > :nth-child(2) {
+  transform: scale(0);
+}
+
+.nav_humburger.active > :last-child {
+  transform: rotate(-38deg);
+}
+
+.unauth_item {
+  margin-right: 20px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+  font-size: 18px;
+}
+
+.unauth_item:hover {
+  transform: scale(1.15);
+}
+
+.toAdmin {
+  transition: 0.3s ease;
+}
+
+.toAdmin:hover {
+  transform: scale(1.1);
+  color: black;
+}
+
+@media (max-width: 760px) {
+  .nav_right_profile_photo_responsive {
+    display: block;
+  }
+
+  .nav_right_profile_photo {
+    display: none;
+  }
+
+  .toAdmin {
+    font-size: 10px;
+  }
+}
