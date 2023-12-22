@@ -46,7 +46,7 @@ const UserProfile = () => {
           <div className="profilePassword_form">
             <div className="profilePassword_input_box">
               <img
-                src={`http://localhost:8000/${currentUser.photo}`}
+                src={`https://mern-shopping-backend-server.vercel.app/${currentUser.photo}`}
                 alt=""
                 className="profile_pic"
                 onClick={() => {

@@ -76,7 +76,7 @@ const Navbar = () => {
                     to="/userprofile"
                   >
                     <img
-                      src={`http://localhost:8000/${currentUser.otherDetail.photo}`}
+                      src={`https://mern-shopping-backend-server.vercel.app/${currentUser.otherDetail.photo}`}
                       alt=""
                       className="nav_right_profile_photo"
                     />
@@ -90,7 +90,7 @@ const Navbar = () => {
                     to="/userpanel"
                   >
                     <img
-                      src={`http://localhost:8000/${currentUser.otherDetail.photo}`}
+                      src={`https://mern-shopping-backend-server.vercel.app/${currentUser.otherDetail.photo}`}
                       alt=""
                       className="nav_right_profile_photo_responsive"
                     />

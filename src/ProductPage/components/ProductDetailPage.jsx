@@ -144,7 +144,7 @@ const ProductDetail = (props) => {
                       src={
                         changeImg
                           ? changeImg
-                          : `http://localhost:8000/${props.product.product.images[0]}`
+                          : `https://mern-shopping-backend-server.vercel.app/${props.product.product.images[0]}`
                       }
                       alt=""
                       className="p_deatil_box_img_container_top_img"
@@ -153,7 +153,7 @@ const ProductDetail = (props) => {
                   <div className="p_detail_box_img_container_bot">
                     {props.product.product.images.map((pimg) => (
                       <img
-                        src={`http://localhost:8000/${pimg}`}
+                        src={`https://mern-shopping-backend-server.vercel.app/${pimg}`}
                         alt=""
                         className="p_detail_box_img_container_bot_img"
                         onClick={(e) => {
@@ -356,7 +356,7 @@ const ProductDetail = (props) => {
                                     )}
                                   <div className="one_review_top">
                                     <img
-                                      src={`http://localhost:8000/${r.user.photo}`}
+                                      src={`https://mern-shopping-backend-server.vercel.app/${r.user.photo}`}
                                       alt=""
                                       className="one_review_img"
                                     />

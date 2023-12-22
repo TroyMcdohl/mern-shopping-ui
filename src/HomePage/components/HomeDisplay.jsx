@@ -85,7 +85,7 @@ export const HomeCard = (props) => {
         {!touch ? (
           <Link to={`/products/${props.id}`}>
             <img
-              src={`http://localhost:8000/${props.images[0]}`}
+              src={`https://mern-shopping-backend-server.vercel.app/${props.images[0]}`}
               alt=""
               className="homeDisplay_card_img"
             />
@@ -93,7 +93,7 @@ export const HomeCard = (props) => {
         ) : (
           <Link to={`/products/${props.id}`}>
             <img
-              src={`http://localhost:8000/${props.images[1]}`}
+              src={`https://mern-shopping-backend-server.vercel.app/${props.images[1]}`}
               alt=""
               className="homeDisplay_card_img_hover"
             />

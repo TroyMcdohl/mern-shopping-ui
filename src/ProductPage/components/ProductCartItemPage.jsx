@@ -57,7 +57,7 @@ const ProductCartItemPage = (props) => {
       <tr className="productcart_item" style={{ height: "15vh" }}>
         <td className="productcart_data">
           <img
-            src={`http://localhost:8000/${props.productImg}`}
+            src={`https://mern-shopping-backend-server.vercel.app/${props.productImg}`}
             alt=""
             className="productcart_item_img"
           />
