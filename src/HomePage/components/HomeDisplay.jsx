@@ -85,7 +85,7 @@ export const HomeCard = (props) => {
         {!touch ? (
           <Link to={`/products/${props.id}`}>
             <img
-              src={`https://https://mern-shopping-ui.vercel.app/${props.images[0]}`}
+              src={`https://mern-shopping-ui.vercel.app/${props.images[0]}`}
               alt=""
               className="homeDisplay_card_img"
             />
