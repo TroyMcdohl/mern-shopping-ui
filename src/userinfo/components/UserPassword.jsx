@@ -15,7 +15,8 @@ const UserPassword = () => {
       confirmPassword: confirmPwd,
     }),
     "https://mern-shopping-backend-server.vercel.app/api/v1/users/updatepassword",
-    "PATCH"
+    "PATCH",
+    "/"
   );
 
   return (

@@ -20,7 +20,7 @@ const Products = () => {
       ? sortValue
         ? `https://mern-shopping-backend-server.vercel.app/api/v1/products?kind=${changeValue}&&sort=${sortValue}`
         : `https://mern-shopping-backend-server.vercel.app/api/v1/products?kind=${changeValue}`
-      : `https://mern-shopping-backend-server.vercel.app/api/v1/products?sort=${sortValue}`;
+      : `https://mern-shopping-backend-server.vercel.app/api/v1/products?sort=price`;
 
   const { data, loading, error, errMsg, success } = useFetchGet(
     url,
