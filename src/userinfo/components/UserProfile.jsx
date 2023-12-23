@@ -30,6 +30,8 @@ const UserProfile = () => {
       }
     );
 
+    console.log(res);
+
     const resData = await res.json();
 
     if (res.ok) {
