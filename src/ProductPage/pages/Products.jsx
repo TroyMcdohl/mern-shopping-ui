@@ -18,7 +18,7 @@ const Products = () => {
   const url =
     changeValue && changeValue !== "all"
       ? sortValue
-        ? `https://mern-shopping-backend-server.vercel.app/api/v1/products?kind=${changeValue}&&sort=${sortValue}`
+        ? `https://mern-shopping-backend-server.vercel.app/api/v1/products?kind=${changeValue}&sort=${sortValue}`
         : `https://mern-shopping-backend-server.vercel.app/api/v1/products?kind=${changeValue}`
       : `https://mern-shopping-backend-server.vercel.app/api/v1/products`;
 
