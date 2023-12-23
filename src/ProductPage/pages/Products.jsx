@@ -5,7 +5,7 @@ import ErrorLoadingShow from "../../hooks/ErrorLoadingShow";
 
 const Products = () => {
   const [changeValue, setChangeValue] = useState();
-  const [sortValue, setSortValue] = useState();
+  const [sortValue, setSortValue] = useState("price");
 
   const queryValue = (value) => {
     setChangeValue(value);
@@ -18,9 +18,9 @@ const Products = () => {
   const url =
     changeValue && changeValue !== "all"
       ? sortValue
-        ? `https://mern-shopping-backend-server.vercel.app/api/v1/products?kind=${changeValue}&sort=${sortValue}`
+        ? `https://mern-shopping-backend-server.vercel.app/api/v1/products?kind=${changeValue}&&sort=${sortValue}`
         : `https://mern-shopping-backend-server.vercel.app/api/v1/products?kind=${changeValue}`
-      : `https://mern-shopping-backend-server.vercel.app/api/v1/products`;
+      : `https://mern-shopping-backend-server.vercel.app/api/v1/products?sort=${sortValue}`;
 
   const { data, loading, error, errMsg, success } = useFetchGet(
     url,
