@@ -25,7 +25,7 @@ const UserProfile = () => {
       {
         method: "PATCH",
         credentials: "include",
-        headers: { "Access-Control-Allow-Origin": "*" },
+
         body: form,
       }
     );
