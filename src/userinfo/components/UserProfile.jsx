@@ -25,7 +25,7 @@ const UserProfile = () => {
       {
         method: "PATCH",
         credentials: "include",
-        mode: "no-cors",
+
         body: form,
       }
     );
