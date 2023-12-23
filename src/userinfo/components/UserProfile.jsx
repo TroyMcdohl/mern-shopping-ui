@@ -30,9 +30,9 @@ const UserProfile = () => {
       }
     );
 
-    console.log(res);
-
     const resData = await res.json();
+
+    console.log(resData);
 
     if (res.ok) {
       localStorage.setItem("current_user", JSON.stringify(resData));
